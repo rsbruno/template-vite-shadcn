@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Button } from "./components/ui/button";
-import "@/themes/global.css"
+import { AppRoutes } from "./routes/index.routes";
+import "@/themes/global.css";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <h1>Hello wordl</h1>
-    <Button>texto</Button>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   </React.StrictMode>
 );
