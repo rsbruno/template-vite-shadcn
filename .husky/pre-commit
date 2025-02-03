@@ -1,0 +1,8 @@
+
+echo "🔴 Executando o lint"
+pnpm lint:fix
+echo "✅ Concluído com sucesso"
+
+git add .
+
+
